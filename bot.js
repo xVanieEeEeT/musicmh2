@@ -107,7 +107,6 @@ client.on('message', async msg =>{
 ////////////////////////
 //////////////////////
 client.on('message', async msg => { 
-    if (msg.author.id !== "476799148218253313") return;
 	if (msg.author.bot) return undefined;
     if (!msg.content.startsWith(prefix)) return undefined;
     
@@ -334,7 +333,6 @@ function play(guild, song) {
 
 
 client.on('message', message => {
-    if (message.author.id !== "476799148218253313") return;
     if (message.content === '+help') {
       message.react('🎵')
         let helpEmbed = new Discord.RichEmbed()
